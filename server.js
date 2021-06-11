@@ -20,5 +20,5 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
 app.use(require("./routes/api-routes"))//router(app) but since router is an object, we can't use app as a argument => not a function
 app.use(require("./routes/html-routes"))
 app.listen(PORT, () => {
-    console.log("App is working its magic on port 3001")
+    console.log("App is working its magic on port 3000")
 })
